@@ -50,7 +50,7 @@ class Task {
     return true;
   }
   
-  // Delete: Remove a task by ID
+  // Remove a task by ID
   function deleteTask(id) {
     const initialLength = tasks.length;
     tasks = tasks.filter(task => task.id !== id);
@@ -80,7 +80,6 @@ class Task {
     });
   }
   
-  // Example usage
   // Create some tasks
   createTask("Complete project", "Finish the JavaScript project by Friday");
   createTask("Buy groceries", "Milk, eggs, bread, and vegetables");
